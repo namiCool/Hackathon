@@ -43,11 +43,11 @@ function App() {
             }
             <form onSubmit={handleSubmit}>
                 <fieldset>
-                    <p>Category</p>
+                    <center><p>Category</p></center>
                     <label>
-
+                        <div className="buttonHolder">
                         <select name="category" onChange={handleChange}>
-                            <option value="">--Please choose an option--</option>
+                            <option value="">---Please choose an option---</option>
                             <optgroup label="Inform">
                                 <option value="Budget Coverage">Budget Coverage</option>
                                 <option value="Tagging Coverage">Tagging Coverage</option>
@@ -71,12 +71,15 @@ function App() {
                                 <option value="Weeknight / Weekend Shut Down">Weeknight / Weekend Shut Down</option>
                             </optgroup>
                         </select>
+                        </div>
                     </label>
                 </fieldset>
                 <fieldset>
                     <label>
+                        <div className="buttonHolder">
                         <p>Current</p>
                         <input type="number" name="current" min="0" max="100"/>
+                        </div>
                     </label>
                 </fieldset>
                 <div className="buttonHolder">
